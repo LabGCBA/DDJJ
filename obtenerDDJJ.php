@@ -13,7 +13,9 @@ $declaracionJurada = array(
         "Actividades Actuales" => array(),
 
     ),
-    "Datos Familiares" => array(),
+    "Datos Familiares" => array(
+        "Familia" => array(),
+    ),
     "Bienes" => array(
         "Bienes Muebles" => array(),
         "Bienes Muebles No Registrables" => array(),
@@ -32,16 +34,14 @@ $declaracionJurada = array(
 class Propiedad{
     public $nombre = "";
     public $value = "";
-    public $isPublic = false;
 
-    public function Propiedad($nombre, $value, $isPublic){
+    public function Propiedad($nombre, $value){
         $this->nombre = $nombre;
         $this->value = $value;
-        $this->isPublic = $isPublic;
     }
 }
 
-$uuid = $_GET["uuid"];
+$uuid = isset($_GET["uuid"]) ? $_GET["uuid"] : "";
 $url = "http://euf.hml.gcba.gob.ar";
 $location = "/dynform-web/transaccionService";
 
@@ -125,17 +125,17 @@ while ($i < count($data) && $data[$i]->orden <= 150)
         $contador =  $data[$i]->valorLong+1;
         for ($k = 0; $k < $contador; $k++)
         {
-            $declaracionJurada["Datos Familiares"][strval($k)] = array();
+            $declaracionJurada["Datos Familiares"]["Familia"][strval($k)] = array();
         }
         $valid = false;
     }
     else if ($j <= 44)
     {
         $property = "Datos Familiares";
-        $subproperty = 0;
+        $subproperty = "Familia";
         if ($data[$i-1]->orden >= $j)
         {
-            $subproperty++;
+            $subsubproperty++;
         }
     }
     else if($j == 45)
@@ -352,7 +352,7 @@ while ($i < count($data) && $data[$i]->orden <= 150)
     }
     if ($valid)
     {
-        $prop = new Propiedad($data[$i]->etiqueta, property_exists($data[$i], "valorStr") ? $data[$i]->valorStr : (property_exists($data[$i], "valorLong") ? $data[$i]->valorLong : $data[$i]->valorDate), true);
+        $prop = new Propiedad($data[$i]->etiqueta, property_exists($data[$i], "valorStr") ? $data[$i]->valorStr : (property_exists($data[$i], "valorLong") ? $data[$i]->valorLong : $data[$i]->valorDate));
         if ($contador!=0)
             array_push($declaracionJurada[$property][$subproperty][strval($subsubproperty)], $prop);
         else 

@@ -1,9 +1,10 @@
 <?php
 
 //Clase para armar el objeto de las credenciales de acceso.
-
-$cuit = $_GET["cuit"];
-
+if (isset($_GET["cuit"]))
+    $cuit1 = $_GET["cuit"];
+else
+    $cuit1 = "";
 class Credentials{
     public $username ='';
     public $password= '';
@@ -26,22 +27,32 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 $sql = "CREATE TABLE IF NOT EXISTS declarantes (
-cuit VARCHAR(11) PRIMARY KEY NOT NULL, 
-nombre VARCHAR(30) NOT NULL,
-ministerio VARCHAR(50),
-cargo VARCHAR(50),
-ultima DATE
+cuit VARCHAR(15) PRIMARY KEY NOT NULL, 
+nombre VARCHAR(100) NOT NULL,
+ministerio VARCHAR(100),
+cargo VARCHAR(100),
+ultima DATE,
+uuid_last INT(11)
 );";
 
 $sql3 = "CREATE TABLE IF NOT EXISTS ministerios (
-ministerio VARCHAR(30) PRIMARY KEY NOT NULL
+ministerio VARCHAR(100) PRIMARY KEY NOT NULL
 );";
 
 $sql4 = "CREATE TABLE IF NOT EXISTS cargos (
-cargo VARCHAR(30) PRIMARY KEY NOT NULL
+cargo VARCHAR(100) PRIMARY KEY NOT NULL
 );";
 
-$sql2 = "CREATE TABLE IF NOT EXISTS declaraciones (uuid INT(11) UNSIGNED NOT NULL PRIMARY KEY,cuit VARCHAR(11) NOT NULL, nombre VARCHAR(30) NOT NULL,ministerio VARCHAR(50),cargo VARCHAR(50),fecha VARCHAR(30),tipo VARCHAR(30),revision INT(2));";
+$sql2 = "CREATE TABLE IF NOT EXISTS declaraciones (
+    uuid INT(11) UNSIGNED NOT NULL PRIMARY KEY,
+    cuit VARCHAR(15) NOT NULL, 
+    nombre VARCHAR(100) NOT NULL,
+    ministerio VARCHAR(100),
+    cargo VARCHAR(100),
+    fecha DATE,
+    tipo VARCHAR(30),
+    revision INT(2)
+);";
 
 if(!$conn->query($sql2))
     echo "Error creando tabla: ".$conn->error ."\n";
@@ -55,7 +66,7 @@ if(!$conn->query($sql4))
 $url = "http://10.79.0.72";
 $service = new SoapClient(null, array("location" => $url."/ddjj/services/historico/list.php", "uri" => $url));
 $service->__setSoapHeaders(new SoapHeader($url,'authenticate', new Credentials('20279391137', 'testmarino')));
-$rslt = $service->getList($cuit,0,200);
+$rslt = $service->getList($cuit1,0,200);
 $data = json_decode($rslt)->lista;
 
 
@@ -74,18 +85,16 @@ foreach($data as &$declaracion)
     $result = $conn->query($sql);
     if ($result->num_rows <= 0)
     {
-        $sql = "INSERT INTO declarantes (cuit,nombre,ministerio,cargo,ultima) VALUES ('{$cuit}','{$nombre}','{$ministerio}','{$cargo}', '{$fecha}');";
+        $sql = "INSERT INTO declarantes (cuit,nombre,ministerio,cargo,ultima,uuid_last) VALUES ('{$cuit}','{$nombre}','{$ministerio}','{$cargo}', '{$fecha}', '{$uuid}');";
         if(!$conn->query($sql))
         echo "Error cargando valor a tabla: " .$conn->error ."\n";
     }
     else 
     {
         $declarante = $result->fetch_assoc();
-        echo $declarante["ultima"]."-".$fecha."\n";
         if (strtotime($fecha) > strtotime($declarante["ultima"]))
         {
-            echo "Atroden";
-            $sql = "UPDATE declarantes SET nombre='{$nombre}',ministerio='{$ministerio}',cargo='{$cargo}',ultima='{$fecha}' WHERE cuit='{$cuit}';";
+            $sql = "UPDATE declarantes SET nombre='{$nombre}',ministerio='{$ministerio}',cargo='{$cargo}',ultima='{$fecha}',uuid_last='{$uuid}' WHERE cuit='{$cuit}';";
             if(!$conn->query($sql))
                 echo "Error cargando valor a tabla: " .$conn->error ."\n";
         }
@@ -100,6 +109,8 @@ foreach($data as &$declaracion)
     if(!$conn->query($sql))
         echo "Error cargando valor a tabla: " .$conn->error ."\n";
 }
-
-
+if ($cuit1 == "")
+    echo "Actualizadas todas las tablas";
+else
+    echo "Actualizadas tablas para ".$cuit1;
 ?>
