@@ -1,1444 +1,861 @@
 {
-   "fechaCreacion":"2016-10-14T17:10:53.473-03:00",
-   "nombreFormulario":"FFCC_Declaración Jurada_DDJJP_V2",
-   "sistOrigen":"DDJJ",
-   "uuid":562790,
-   "valorFormComps":[
-      {
-         "etiqueta":"Tipo de Presentación",
-         "id":7025638,
-         "idFormComp":162748,
-         "inputName":"tipo_presentacion",
-         "orden":1,
-         "relevanciaBusqueda":0,
-         "valorStr":"Inicial"
-      },
-      {
-         "etiqueta":"Tipo de documento",
-         "id":7025658,
-         "idFormComp":162749,
-         "inputName":"tipo_docum",
-         "orden":2,
-         "relevanciaBusqueda":0,
-         "valorStr":"DNI"
-      },
-      {
-         "etiqueta":"N° de documento",
-         "id":7025729,
-         "idFormComp":162750,
-         "inputName":"num_docum",
-         "orden":3,
-         "relevanciaBusqueda":0,
-         "valorLong":361722311
-      },
-      {
-         "etiqueta":"CUIT\/CUIL",
-         "id":7025748,
-         "idFormComp":162751,
-         "inputName":"cuil_cuit",
-         "orden":4,
-         "relevanciaBusqueda":0,
-         "valorLong":20361722311
-      },
-      {
-         "etiqueta":"Apellido y Nombres",
-         "id":7025677,
-         "idFormComp":162752,
-         "inputName":"nombre_apellido",
-         "orden":5,
-         "relevanciaBusqueda":0,
-         "valorStr":"Diego Riva"
-      },
-      {
-         "etiqueta":"Fecha de Nacimiento",
-         "id":7025759,
-         "idFormComp":163233,
-         "inputName":"fecha_nacimiento",
-         "orden":6,
-         "relevanciaBusqueda":0,
-         "valorStr":"07-06-1985"
-      },
-      {
-         "etiqueta":"Sexo",
-         "id":7025730,
-         "idFormComp":163234,
-         "inputName":"sexo",
-         "orden":7,
-         "relevanciaBusqueda":0,
-         "valorStr":"Masculino"
-      },
-      {
-         "etiqueta":"Estado Civíl",
-         "id":7025714,
-         "idFormComp":163235,
-         "inputName":"estado_civil",
-         "orden":8,
-         "relevanciaBusqueda":0,
-         "valorStr":"Casado\/a"
-      },
-      {
-         "etiqueta":"Ingreso a GCBA",
-         "id":7025720,
-         "idFormComp":163237,
-         "inputName":"fecha_ingreso",
-         "orden":10,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-02-15T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Jurisdiccion",
-         "id":7025696,
-         "idFormComp":163238,
-         "inputName":"jurisdiccion",
-         "orden":11,
-         "relevanciaBusqueda":0,
-         "valorStr":"MINISTERIO DE HABITAT Y DESARROLLO HUMANO"
-      },
-      {
-         "etiqueta":"Secretaría",
-         "id":7025628,
-         "idFormComp":163239,
-         "inputName":"secretaria",
-         "orden":12,
-         "relevanciaBusqueda":0,
-         "valorStr":"SUBSECRETARIA ADMINISTRACION DE LA POLICIA METROPOLITANA"
-      },
-      {
-         "etiqueta":"Dirección General",
-         "id":7025621,
-         "idFormComp":163240,
-         "inputName":"reparticion",
-         "orden":13,
-         "relevanciaBusqueda":0,
-         "valorStr":"DIRECCION GENERAL DE ASUNTOS JUDICIALES PG"
-      },
-      {
-         "etiqueta":"Cargo",
-         "id":7025755,
-         "idFormComp":163241,
-         "inputName":"cargo",
-         "orden":14,
-         "relevanciaBusqueda":0,
-         "valorStr":"VICEJEFE DE GOBIERNO"
-      },
-      {
-         "etiqueta":"Retiro voluntario",
-         "id":7025668,
-         "idFormComp":163413,
-         "inputName":"retiro_voluntario",
-         "orden":15,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Estudios Cursados",
-         "id":7025756,
-         "idFormComp":163242,
-         "inputName":"estudios",
-         "orden":16,
-         "relevanciaBusqueda":0,
-         "valorStr":"Secundario"
-      },
-      {
-         "etiqueta":"Retengo Partida",
-         "id":7025604,
-         "idFormComp":163244,
-         "inputName":"retengo_partida",
-         "orden":17,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Organismo de Origen",
-         "id":7025715,
-         "idFormComp":163245,
-         "inputName":"organismo",
-         "orden":18,
-         "relevanciaBusqueda":0,
-         "valorStr":"un trabajo"
-      },
-      {
-         "etiqueta":"Relación Laboral",
-         "id":7025736,
-         "idFormComp":163246,
-         "inputName":"relacion_laboral",
-         "orden":19,
-         "relevanciaBusqueda":0,
-         "valorStr":"directa"
-      },
-      {
-         "etiqueta":"Especif. Rel. Laboral",
-         "id":7025699,
-         "idFormComp":163247,
-         "inputName":"especificaciones",
-         "orden":20,
-         "relevanciaBusqueda":0,
-         "valorStr":"directa"
-      },
-      {
-         "etiqueta":"Monto Anual Neto $",
-         "id":7025664,
-         "idFormComp":163248,
-         "inputName":"monto_anual_pesos",
-         "orden":21,
-         "relevanciaBusqueda":0,
-         "valorLong":10000
-      },
-      {
-         "etiqueta":"Actividad previa",
-         "id":7025702,
-         "idFormComp":163249,
-         "inputName":"actividad_previa",
-         "orden":22,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Antecedentes Laborales Previos",
-         "id":7025674,
-         "idFormComp":163250,
-         "inputName":"separator_antecedentes",
-         "orden":23,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":1
-      },
-      {
-         "etiqueta":"Empresa, organismo",
-         "id":7025627,
-         "idFormComp":163251,
-         "inputName":"empresa",
-         "orden":24,
-         "relevanciaBusqueda":0,
-         "valorStr":"empresa"
-      },
-      {
-         "etiqueta":"Entidad",
-         "id":7025656,
-         "idFormComp":163252,
-         "inputName":"entidad",
-         "orden":25,
-         "relevanciaBusqueda":0,
-         "valorStr":"empresa"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa",
-         "id":7025728,
-         "idFormComp":163253,
-         "inputName":"actividad_empresa",
-         "orden":26,
-         "relevanciaBusqueda":0,
-         "valorStr":"ventas"
-      },
-      {
-         "etiqueta":"Cargo o función",
-         "id":7025637,
-         "idFormComp":163254,
-         "inputName":"cargo_funcion",
-         "orden":27,
-         "relevanciaBusqueda":0,
-         "valorStr":"vendedor"
-      },
-      {
-         "etiqueta":"Desde",
-         "id":7025636,
-         "idFormComp":163255,
-         "inputName":"fecha_desde",
-         "orden":28,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-08-01T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Hasta",
-         "id":7025704,
-         "idFormComp":163256,
-         "inputName":"fecha_hasta",
-         "orden":29,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-08-31T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Proveedor",
-         "id":7025693,
-         "idFormComp":163257,
-         "inputName":"fue_proveedor",
-         "orden":30,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Empresa, organismo",
-         "id":7025643,
-         "idFormComp":163251,
-         "inputName":"empresa_R1",
-         "orden":24,
-         "relevanciaBusqueda":0,
-         "valorStr":"qa testing"
-      },
-      {
-         "etiqueta":"Entidad",
-         "id":7025734,
-         "idFormComp":163252,
-         "inputName":"entidad_R1",
-         "orden":25,
-         "relevanciaBusqueda":0,
-         "valorStr":"entidad QA TESTING"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa",
-         "id":7025678,
-         "idFormComp":163253,
-         "inputName":"actividad_empresa_R1",
-         "orden":26,
-         "relevanciaBusqueda":0,
-         "valorStr":"actividad QA TESTING"
-      },
-      {
-         "etiqueta":"Cargo o función",
-         "id":7025727,
-         "idFormComp":163254,
-         "inputName":"cargo_funcion_R1",
-         "orden":27,
-         "relevanciaBusqueda":0,
-         "valorStr":"cargo QA TESTING"
-      },
-      {
-         "etiqueta":"Desde",
-         "id":7025654,
-         "idFormComp":163255,
-         "inputName":"fecha_desde_R1",
-         "orden":28,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Hasta",
-         "id":7025695,
-         "idFormComp":163256,
-         "inputName":"fecha_hasta_R1",
-         "orden":29,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Proveedor",
-         "id":7025619,
-         "idFormComp":163257,
-         "inputName":"fue_proveedor_R1",
-         "orden":30,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Actividades Actuales",
-         "id":7025616,
-         "idFormComp":163258,
-         "inputName":"separator_actividad",
-         "orden":31,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":2
-      },
-      {
-         "etiqueta":"Empresa, organismo",
-         "id":7025731,
-         "idFormComp":163259,
-         "inputName":"empresa_organismo",
-         "orden":32,
-         "relevanciaBusqueda":0,
-         "valorStr":"mi casa"
-      },
-      {
-         "etiqueta":"Entidad",
-         "id":7025725,
-         "idFormComp":163260,
-         "inputName":"entidad_actual",
-         "orden":33,
-         "relevanciaBusqueda":0,
-         "valorStr":"mi casa"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa",
-         "id":7025738,
-         "idFormComp":163261,
-         "inputName":"actividad",
-         "orden":34,
-         "relevanciaBusqueda":0,
-         "valorStr":"mi casa"
-      },
-      {
-         "etiqueta":"Funcion o Cargo",
-         "id":7025655,
-         "idFormComp":163262,
-         "inputName":"cargo_actual",
-         "orden":35,
-         "relevanciaBusqueda":0,
-         "valorStr":"mi casa"
-      },
-      {
-         "etiqueta":"Desde",
-         "id":7025602,
-         "idFormComp":163263,
-         "inputName":"fecha_actividad",
-         "orden":36,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-04T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Licencia o suspensión",
-         "id":7025732,
-         "idFormComp":163264,
-         "inputName":"licencia",
-         "orden":37,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Suspención de actividad",
-         "id":7025710,
-         "idFormComp":163414,
-         "inputName":"fecha_hasta_licencia",
-         "orden":38,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-04T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Horas semanales",
-         "id":7025631,
-         "idFormComp":163265,
-         "inputName":"horas",
-         "orden":39,
-         "relevanciaBusqueda":0,
-         "valorStr":"25 Hs."
-      },
-      {
-         "etiqueta":"Proveedor",
-         "id":7025623,
-         "idFormComp":163266,
-         "inputName":"es_proveedor",
-         "orden":40,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Empresa, organismo",
-         "id":7025609,
-         "idFormComp":163259,
-         "inputName":"empresa_organismo_R1",
-         "orden":32,
-         "relevanciaBusqueda":0,
-         "valorStr":"empresa QA TESTING"
-      },
-      {
-         "etiqueta":"Entidad",
-         "id":7025639,
-         "idFormComp":163260,
-         "inputName":"entidad_actual_R1",
-         "orden":33,
-         "relevanciaBusqueda":0,
-         "valorStr":"entidad QA TESTING"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa",
-         "id":7025613,
-         "idFormComp":163261,
-         "inputName":"actividad_R1",
-         "orden":34,
-         "relevanciaBusqueda":0,
-         "valorStr":"actividad QA TESTING"
-      },
-      {
-         "etiqueta":"Funcion o Cargo",
-         "id":7025650,
-         "idFormComp":163262,
-         "inputName":"cargo_actual_R1",
-         "orden":35,
-         "relevanciaBusqueda":0,
-         "valorStr":"cargo QA TESTING"
-      },
-      {
-         "etiqueta":"Desde",
-         "id":7025662,
-         "idFormComp":163263,
-         "inputName":"fecha_actividad_R1",
-         "orden":36,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Licencia o suspensión",
-         "id":7025700,
-         "idFormComp":163264,
-         "inputName":"licencia_R1",
-         "orden":37,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Suspención de actividad",
-         "id":7025750,
-         "idFormComp":163414,
-         "inputName":"fecha_hasta_licencia_R1",
-         "orden":38,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-26T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Horas semanales",
-         "id":7025659,
-         "idFormComp":163265,
-         "inputName":"horas_R1",
-         "orden":39,
-         "relevanciaBusqueda":0,
-         "valorStr":"5 Hs."
-      },
-      {
-         "etiqueta":"Proveedor",
-         "id":7025624,
-         "idFormComp":163266,
-         "inputName":"es_proveedor_R1",
-         "orden":40,
-         "relevanciaBusqueda":0,
-         "valorStr":"Si"
-      },
-      {
-         "etiqueta":"Empresa, organismo",
-         "id":7025711,
-         "idFormComp":163259,
-         "inputName":"empresa_organismo_R2",
-         "orden":32,
-         "relevanciaBusqueda":0,
-         "valorStr":"empresa QA TESTING dos"
-      },
-      {
-         "etiqueta":"Entidad",
-         "id":7025754,
-         "idFormComp":163260,
-         "inputName":"entidad_actual_R2",
-         "orden":33,
-         "relevanciaBusqueda":0,
-         "valorStr":"entidad QA TESTING dos"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa",
-         "id":7025620,
-         "idFormComp":163261,
-         "inputName":"actividad_R2",
-         "orden":34,
-         "relevanciaBusqueda":0,
-         "valorStr":"actividad QA TESTING dos"
-      },
-      {
-         "etiqueta":"Funcion o Cargo",
-         "id":7025625,
-         "idFormComp":163262,
-         "inputName":"cargo_actual_R2",
-         "orden":35,
-         "relevanciaBusqueda":0,
-         "valorStr":"cargo QA TESTING dos"
-      },
-      {
-         "etiqueta":"Desde",
-         "id":7025743,
-         "idFormComp":163263,
-         "inputName":"fecha_actividad_R2",
-         "orden":36,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Licencia o suspensión",
-         "id":7025648,
-         "idFormComp":163264,
-         "inputName":"licencia_R2",
-         "orden":37,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Suspención de actividad",
-         "id":7025747,
-         "idFormComp":163414,
-         "inputName":"fecha_hasta_licencia_R2",
-         "orden":38,
-         "relevanciaBusqueda":0,
-         "valorDate":"0001-12-05T01:16:00-03:00"
-      },
-      {
-         "etiqueta":"Horas semanales",
-         "id":7025739,
-         "idFormComp":163265,
-         "inputName":"horas_R2",
-         "orden":39,
-         "relevanciaBusqueda":0,
-         "valorStr":"8 Hs."
-      },
-      {
-         "etiqueta":"Proveedor",
-         "id":7025718,
-         "idFormComp":163266,
-         "inputName":"es_proveedor_R2",
-         "orden":40,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Datos Familiares",
-         "id":7025611,
-         "idFormComp":163267,
-         "inputName":"separator_dat_familia",
-         "orden":41,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Bienes muebles registrables",
-         "id":7025687,
-         "idFormComp":163280,
-         "inputName":"separator_bienes_registrables",
-         "orden":45,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Bienes muebles valor individual",
-         "id":7025737,
-         "idFormComp":163281,
-         "inputName":"separator_bienes_val_ind",
-         "orden":56,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":2
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025752,
-         "idFormComp":163416,
-         "inputName":"registro_val_indi",
-         "orden":57,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025744,
-         "idFormComp":163283,
-         "inputName":"vinculo_bien_val_indi",
-         "orden":58,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo Bien",
-         "id":7025612,
-         "idFormComp":163284,
-         "inputName":"tipo_bien_val_indi",
-         "orden":59,
-         "relevanciaBusqueda":0,
-         "valorStr":"Patente Industrial"
-      },
-      {
-         "etiqueta":"Marca\/descripción ",
-         "id":7025735,
-         "idFormComp":163285,
-         "inputName":"marca_bien_val_indi",
-         "orden":60,
-         "relevanciaBusqueda":0,
-         "valorStr":"asdasd"
-      },
-      {
-         "etiqueta":"Año fabricación",
-         "id":7025660,
-         "idFormComp":163287,
-         "inputName":"anio_fabricacion_val_indi",
-         "orden":61,
-         "relevanciaBusqueda":0,
-         "valorLong":2014
-      },
-      {
-         "etiqueta":"Año ingreso",
-         "id":7025626,
-         "idFormComp":163286,
-         "inputName":"anio_ingreso_val_indi",
-         "orden":62,
-         "relevanciaBusqueda":0,
-         "valorLong":2014
-      },
-      {
-         "etiqueta":"Origen fondos ",
-         "id":7025689,
-         "idFormComp":163288,
-         "inputName":"origen_fondos_val_indi",
-         "orden":63,
-         "relevanciaBusqueda":0,
-         "valorStr":"Premio"
-      },
-      {
-         "etiqueta":"Porcentaje de titularidad",
-         "id":7025644,
-         "idFormComp":163289,
-         "inputName":"porcentaje_titularidad_valor",
-         "orden":64,
-         "relevanciaBusqueda":0,
-         "valorStr":"34"
-      },
-      {
-         "etiqueta":"Valor Fiscal $ ",
-         "id":7025717,
-         "idFormComp":163290,
-         "inputName":"valor_fiscal_val_indi",
-         "orden":65,
-         "relevanciaBusqueda":0,
-         "valorLong":3434
-      },
-      {
-         "etiqueta":"Valor Adquirido $",
-         "id":7025698,
-         "idFormComp":163291,
-         "inputName":"valor_adquirido_val_indi",
-         "orden":66,
-         "relevanciaBusqueda":0,
-         "valorLong":343434
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025629,
-         "idFormComp":163416,
-         "inputName":"registro_val_indi_R1",
-         "orden":57,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025679,
-         "idFormComp":163283,
-         "inputName":"vinculo_bien_val_indi_R1",
-         "orden":58,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo Bien",
-         "id":7025645,
-         "idFormComp":163284,
-         "inputName":"tipo_bien_val_indi_R1",
-         "orden":59,
-         "relevanciaBusqueda":0,
-         "valorStr":"Aeronave"
-      },
-      {
-         "etiqueta":"Marca\/descripción ",
-         "id":7025642,
-         "idFormComp":163285,
-         "inputName":"marca_bien_val_indi_R1",
-         "orden":60,
-         "relevanciaBusqueda":0,
-         "valorStr":"MILLENIAL HAWK DNNO"
-      },
-      {
-         "etiqueta":"Año fabricación",
-         "id":7025740,
-         "idFormComp":163287,
-         "inputName":"anio_fabricacion_val_indi_R1",
-         "orden":61,
-         "relevanciaBusqueda":0,
-         "valorLong":2014
-      },
-      {
-         "etiqueta":"Año ingreso",
-         "id":7025745,
-         "idFormComp":163286,
-         "inputName":"anio_ingreso_val_indi_R1",
-         "orden":62,
-         "relevanciaBusqueda":0,
-         "valorLong":2014
-      },
-      {
-         "etiqueta":"Origen fondos ",
-         "id":7025694,
-         "idFormComp":163288,
-         "inputName":"origen_fondos_val_indi_R1",
-         "orden":63,
-         "relevanciaBusqueda":0,
-         "valorStr":"Herencia"
-      },
-      {
-         "etiqueta":"Porcentaje de titularidad",
-         "id":7025686,
-         "idFormComp":163289,
-         "inputName":"porcentaje_titularidad_valor_R1",
-         "orden":64,
-         "relevanciaBusqueda":0,
-         "valorStr":"25"
-      },
-      {
-         "etiqueta":"Valor Fiscal $ ",
-         "id":7025673,
-         "idFormComp":163290,
-         "inputName":"valor_fiscal_val_indi_R1",
-         "orden":65,
-         "relevanciaBusqueda":0,
-         "valorLong":20000
-      },
-      {
-         "etiqueta":"Valor Adquirido $",
-         "id":7025706,
-         "idFormComp":163291,
-         "inputName":"valor_adquirido_val_indi_R1",
-         "orden":66,
-         "relevanciaBusqueda":0,
-         "valorLong":5000
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025701,
-         "idFormComp":163416,
-         "inputName":"registro_val_indi_R2",
-         "orden":57,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025647,
-         "idFormComp":163283,
-         "inputName":"vinculo_bien_val_indi_R2",
-         "orden":58,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo Bien",
-         "id":7025634,
-         "idFormComp":163284,
-         "inputName":"tipo_bien_val_indi_R2",
-         "orden":59,
-         "relevanciaBusqueda":0,
-         "valorStr":"Automotor"
-      },
-      {
-         "etiqueta":"Marca\/descripción ",
-         "id":7025666,
-         "idFormComp":163285,
-         "inputName":"marca_bien_val_indi_R2",
-         "orden":60,
-         "relevanciaBusqueda":0,
-         "valorStr":"CHEVY"
-      },
-      {
-         "etiqueta":"Año fabricación",
-         "id":7025607,
-         "idFormComp":163287,
-         "inputName":"anio_fabricacion_val_indi_R2",
-         "orden":61,
-         "relevanciaBusqueda":0,
-         "valorLong":2011
-      },
-      {
-         "etiqueta":"Año ingreso",
-         "id":7025622,
-         "idFormComp":163286,
-         "inputName":"anio_ingreso_val_indi_R2",
-         "orden":62,
-         "relevanciaBusqueda":0,
-         "valorLong":2012
-      },
-      {
-         "etiqueta":"Origen fondos ",
-         "id":7025691,
-         "idFormComp":163288,
-         "inputName":"origen_fondos_val_indi_R2",
-         "orden":63,
-         "relevanciaBusqueda":0,
-         "valorStr":"Ingresos propios"
-      },
-      {
-         "etiqueta":"Porcentaje de titularidad",
-         "id":7025630,
-         "idFormComp":163289,
-         "inputName":"porcentaje_titularidad_valor_R2",
-         "orden":64,
-         "relevanciaBusqueda":0,
-         "valorStr":"30"
-      },
-      {
-         "etiqueta":"Valor Fiscal $ ",
-         "id":7025663,
-         "idFormComp":163290,
-         "inputName":"valor_fiscal_val_indi_R2",
-         "orden":65,
-         "relevanciaBusqueda":0,
-         "valorLong":5000
-      },
-      {
-         "etiqueta":"Valor Adquirido $",
-         "id":7025753,
-         "idFormComp":163291,
-         "inputName":"valor_adquirido_val_indi_R2",
-         "orden":66,
-         "relevanciaBusqueda":0,
-         "valorLong":3000
-      },
-      {
-         "etiqueta":"Bienes inmuebles",
-         "id":7025632,
-         "idFormComp":163293,
-         "inputName":"separator_registro_bienes_inm",
-         "orden":67,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Clasificación inmuebles",
-         "id":7025667,
-         "idFormComp":163417,
-         "inputName":"clasificacion_inmueble",
-         "orden":68,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025671,
-         "idFormComp":163294,
-         "inputName":"vinculo_bien_inmueble",
-         "orden":69,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo Bien ",
-         "id":7025726,
-         "idFormComp":163295,
-         "inputName":"tipo_bien_inmueble",
-         "orden":70,
-         "relevanciaBusqueda":0,
-         "valorStr":"Campo"
-      },
-      {
-         "etiqueta":"Barrio\/Zona",
-         "id":7025676,
-         "idFormComp":163296,
-         "inputName":"zona_inmueble",
-         "orden":71,
-         "relevanciaBusqueda":0,
-         "valorStr":"qweqwe"
-      },
-      {
-         "etiqueta":"Localidad",
-         "id":7025633,
-         "idFormComp":163297,
-         "inputName":"localidad_inmueble",
-         "orden":72,
-         "relevanciaBusqueda":0,
-         "valorStr":"ewqeqwe"
-      },
-      {
-         "etiqueta":"Provincia",
-         "id":7025653,
-         "idFormComp":163298,
-         "inputName":"provincia_inmueble",
-         "orden":73,
-         "relevanciaBusqueda":0,
-         "valorStr":"Chubut"
-      },
-      {
-         "etiqueta":"Pais",
-         "id":7025758,
-         "idFormComp":163299,
-         "inputName":"pais",
-         "orden":74,
-         "relevanciaBusqueda":0,
-         "valorStr":"Argentina"
-      },
-      {
-         "etiqueta":"Porcentaje de Titularidad",
-         "id":7025635,
-         "idFormComp":163300,
-         "inputName":"porcentaje_titularidad_inm",
-         "orden":75,
-         "relevanciaBusqueda":0,
-         "valorStr":"22"
-      },
-      {
-         "etiqueta":"Año ingreso ",
-         "id":7025605,
-         "idFormComp":163301,
-         "inputName":"anio_ingreso_inmueble",
-         "orden":76,
-         "relevanciaBusqueda":0,
-         "valorLong":2014
-      },
-      {
-         "etiqueta":"Origen fondos ",
-         "id":7025741,
-         "idFormComp":163302,
-         "inputName":"origen_fondos_inmueble",
-         "orden":77,
-         "relevanciaBusqueda":0,
-         "valorStr":"Venta de activos"
-      },
-      {
-         "etiqueta":"Superficie ",
-         "id":7025675,
-         "idFormComp":163303,
-         "inputName":"superficie",
-         "orden":78,
-         "relevanciaBusqueda":0,
-         "valorStr":"222"
-      },
-      {
-         "etiqueta":"unidad",
-         "id":7025683,
-         "idFormComp":163304,
-         "inputName":"unidad_inmueble",
-         "orden":79,
-         "relevanciaBusqueda":0,
-         "valorStr":"M2"
-      },
-      {
-         "etiqueta":"Mejoras $",
-         "id":7025723,
-         "idFormComp":163305,
-         "inputName":"monto_mejoras",
-         "orden":80,
-         "relevanciaBusqueda":0,
-         "valorLong":2222
-      },
-      {
-         "etiqueta":"Valor Fiscal $",
-         "id":7025682,
-         "idFormComp":163306,
-         "inputName":"valor_fiscal_inmueble",
-         "orden":81,
-         "relevanciaBusqueda":0,
-         "valorLong":2222
-      },
-      {
-         "etiqueta":"Valor Adquirido $",
-         "id":7025757,
-         "idFormComp":163307,
-         "inputName":"valor_adquirido_inmueble",
-         "orden":82,
-         "relevanciaBusqueda":0,
-         "valorLong":22222
-      },
-      {
-         "etiqueta":"Títulos, acciones, fondos comunes de inversión",
-         "id":7025618,
-         "idFormComp":163308,
-         "inputName":"separator_titulos",
-         "orden":83,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Participacion en sociedades",
-         "id":7025610,
-         "idFormComp":163319,
-         "inputName":"separator_sociedades",
-         "orden":94,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Depósito y dinero en efectivo",
-         "id":7025708,
-         "idFormComp":163338,
-         "inputName":"separator_efectivo",
-         "orden":104,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Ingresos por Otros Trabajos \/ Actividades",
-         "id":7025722,
-         "idFormComp":163345,
-         "inputName":"separator_otros_trabajos",
-         "orden":111,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":2
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025601,
-         "idFormComp":163421,
-         "inputName":"registro_otros_trabajos",
-         "orden":112,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025652,
-         "idFormComp":163347,
-         "inputName":"vinculo_otros_trabajos",
-         "orden":113,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Cargo o función",
-         "id":7025697,
-         "idFormComp":163348,
-         "inputName":"cargo_otros_trabajos",
-         "orden":114,
-         "relevanciaBusqueda":0,
-         "valorStr":"DEVELOPER"
-      },
-      {
-         "etiqueta":"Relación Laboral ",
-         "id":7025617,
-         "idFormComp":163349,
-         "inputName":"relacion_laboral_otros_trabajo",
-         "orden":115,
-         "relevanciaBusqueda":0,
-         "valorStr":"INDEPENDIENTE"
-      },
-      {
-         "etiqueta":"Empleador \/ Entidad ",
-         "id":7025724,
-         "idFormComp":163350,
-         "inputName":"empleador_otros_trabajos",
-         "orden":116,
-         "relevanciaBusqueda":0,
-         "valorStr":"GCBA"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa, etc\/ ámbito ",
-         "id":7025716,
-         "idFormComp":163351,
-         "inputName":"actividad_otros_trabajos",
-         "orden":117,
-         "relevanciaBusqueda":0,
-         "valorStr":"GOBIERNO DE LA CIUDAD"
-      },
-      {
-         "etiqueta":"Monto Anual Neto $ ",
-         "id":7025661,
-         "idFormComp":163352,
-         "inputName":"monto_otros_trabajos",
-         "orden":118,
-         "relevanciaBusqueda":0,
-         "valorLong":10000
-      },
-      {
-         "etiqueta":"Fecha desde",
-         "id":7025680,
-         "idFormComp":163353,
-         "inputName":"fecha_desde_otros_trabajos",
-         "orden":119,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Actividad",
-         "id":7025721,
-         "idFormComp":163354,
-         "inputName":"en_actividad_otros_trabajos",
-         "orden":120,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025742,
-         "idFormComp":163421,
-         "inputName":"registro_otros_trabajos_R1",
-         "orden":112,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025746,
-         "idFormComp":163347,
-         "inputName":"vinculo_otros_trabajos_R1",
-         "orden":113,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Cargo o función",
-         "id":7025651,
-         "idFormComp":163348,
-         "inputName":"cargo_otros_trabajos_R1",
-         "orden":114,
-         "relevanciaBusqueda":0,
-         "valorStr":"MAQUETADOR"
-      },
-      {
-         "etiqueta":"Relación Laboral ",
-         "id":7025749,
-         "idFormComp":163349,
-         "inputName":"relacion_laboral_otros_trabajo_R1",
-         "orden":115,
-         "relevanciaBusqueda":0,
-         "valorStr":"DEPENDENCIA"
-      },
-      {
-         "etiqueta":"Empleador \/ Entidad ",
-         "id":7025672,
-         "idFormComp":163350,
-         "inputName":"empleador_otros_trabajos_R1",
-         "orden":116,
-         "relevanciaBusqueda":0,
-         "valorStr":"GCBA"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa, etc\/ ámbito ",
-         "id":7025614,
-         "idFormComp":163351,
-         "inputName":"actividad_otros_trabajos_R1",
-         "orden":117,
-         "relevanciaBusqueda":0,
-         "valorStr":"GOBIERNO DE LA CIUDAD"
-      },
-      {
-         "etiqueta":"Monto Anual Neto $ ",
-         "id":7025649,
-         "idFormComp":163352,
-         "inputName":"monto_otros_trabajos_R1",
-         "orden":118,
-         "relevanciaBusqueda":0,
-         "valorLong":2000
-      },
-      {
-         "etiqueta":"Fecha desde",
-         "id":7025705,
-         "idFormComp":163353,
-         "inputName":"fecha_desde_otros_trabajos_R1",
-         "orden":119,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Actividad",
-         "id":7025657,
-         "idFormComp":163354,
-         "inputName":"en_actividad_otros_trabajos_R1",
-         "orden":120,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025670,
-         "idFormComp":163421,
-         "inputName":"registro_otros_trabajos_R2",
-         "orden":112,
-         "relevanciaBusqueda":0,
-         "valorStr":"No Propio"
-      },
-      {
-         "etiqueta":"Vinculo",
-         "id":7025615,
-         "idFormComp":163347,
-         "inputName":"vinculo_otros_trabajos_R2",
-         "orden":113,
-         "relevanciaBusqueda":0,
-         "valorStr":"Otro"
-      },
-      {
-         "etiqueta":"Cargo o función",
-         "id":7025719,
-         "idFormComp":163348,
-         "inputName":"cargo_otros_trabajos_R2",
-         "orden":114,
-         "relevanciaBusqueda":0,
-         "valorStr":"MANTENIMIENTO"
-      },
-      {
-         "etiqueta":"Relación Laboral ",
-         "id":7025685,
-         "idFormComp":163349,
-         "inputName":"relacion_laboral_otros_trabajo_R2",
-         "orden":115,
-         "relevanciaBusqueda":0,
-         "valorStr":"DEPENDENCIA"
-      },
-      {
-         "etiqueta":"Empleador \/ Entidad ",
-         "id":7025603,
-         "idFormComp":163350,
-         "inputName":"empleador_otros_trabajos_R2",
-         "orden":116,
-         "relevanciaBusqueda":0,
-         "valorStr":"GCBA"
-      },
-      {
-         "etiqueta":"Actividad de la Empresa, etc\/ ámbito ",
-         "id":7025703,
-         "idFormComp":163351,
-         "inputName":"actividad_otros_trabajos_R2",
-         "orden":117,
-         "relevanciaBusqueda":0,
-         "valorStr":"GOBIERNO DE LA CIUDAD"
-      },
-      {
-         "etiqueta":"Monto Anual Neto $ ",
-         "id":7025640,
-         "idFormComp":163352,
-         "inputName":"monto_otros_trabajos_R2",
-         "orden":118,
-         "relevanciaBusqueda":0,
-         "valorLong":60000
-      },
-      {
-         "etiqueta":"Fecha desde",
-         "id":7025707,
-         "idFormComp":163353,
-         "inputName":"fecha_desde_otros_trabajos_R2",
-         "orden":119,
-         "relevanciaBusqueda":0,
-         "valorDate":"2016-10-05T00:00:00-03:00"
-      },
-      {
-         "etiqueta":"Actividad",
-         "id":7025665,
-         "idFormComp":163354,
-         "inputName":"en_actividad_otros_trabajos_R2",
-         "orden":120,
-         "relevanciaBusqueda":0,
-         "valorStr":"No"
-      },
-      {
-         "etiqueta":"Otros ingresos",
-         "id":7025684,
-         "idFormComp":163660,
-         "inputName":"separator_otro_ingreso",
-         "orden":121,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":1
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025690,
-         "idFormComp":163400,
-         "inputName":"registro_otro_ingreso",
-         "orden":122,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vínculo",
-         "id":7025606,
-         "idFormComp":163401,
-         "inputName":"vinculo_otro_ingreso",
-         "orden":123,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo de ingreso",
-         "id":7025712,
-         "idFormComp":163661,
-         "inputName":"tipo_ingreso",
-         "orden":124,
-         "relevanciaBusqueda":0,
-         "valorStr":"Alquileres"
-      },
-      {
-         "etiqueta":"Derecho originante",
-         "id":7025733,
-         "idFormComp":163662,
-         "inputName":"derecho_originante_ingreso",
-         "orden":125,
-         "relevanciaBusqueda":0,
-         "valorStr":"GCBA"
-      },
-      {
-         "etiqueta":"Monto total",
-         "id":7025641,
-         "idFormComp":163663,
-         "inputName":"monto_total_ingreso",
-         "orden":126,
-         "relevanciaBusqueda":0,
-         "valorLong":2000
-      },
-      {
-         "etiqueta":"Clasificación de registro",
-         "id":7025751,
-         "idFormComp":163400,
-         "inputName":"registro_otro_ingreso_R1",
-         "orden":122,
-         "relevanciaBusqueda":0,
-         "valorStr":"Propio"
-      },
-      {
-         "etiqueta":"Vínculo",
-         "id":7025646,
-         "idFormComp":163401,
-         "inputName":"vinculo_otro_ingreso_R1",
-         "orden":123,
-         "relevanciaBusqueda":0,
-         "valorStr":"N\/A"
-      },
-      {
-         "etiqueta":"Tipo de ingreso",
-         "id":7025713,
-         "idFormComp":163661,
-         "inputName":"tipo_ingreso_R1",
-         "orden":124,
-         "relevanciaBusqueda":0,
-         "valorStr":"Cobro herencia"
-      },
-      {
-         "etiqueta":"Derecho originante",
-         "id":7025681,
-         "idFormComp":163662,
-         "inputName":"derecho_originante_ingreso_R1",
-         "orden":125,
-         "relevanciaBusqueda":0,
-         "valorStr":"CASA DE LA ABUELA "
-      },
-      {
-         "etiqueta":"Monto total",
-         "id":7025709,
-         "idFormComp":163663,
-         "inputName":"monto_total_ingreso_R1",
-         "orden":126,
-         "relevanciaBusqueda":0,
-         "valorLong":30000
-      },
-      {
-         "etiqueta":"Ingreso por venta de bienes inmuebles",
-         "id":7025608,
-         "idFormComp":163355,
-         "inputName":"separator_venta",
-         "orden":127,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Deudas",
-         "id":7025692,
-         "idFormComp":163324,
-         "inputName":"separator_deudas",
-         "orden":139,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      },
-      {
-         "etiqueta":"Acreencias",
-         "id":7025688,
-         "idFormComp":163329,
-         "inputName":"separator_acreencias",
-         "orden":144,
-         "relevanciaBusqueda":0,
-         "separadorRepetidor":true,
-         "valorLong":0
-      }
-   ]
+   "Fecha Creación":"2016-10-31T11:52:06.122-03:00",
+   "Datos Personales":{
+      "Información Personal":[
+         {
+            "nombre":"Tipo de Presentación",
+            "value":"Actualizacion"
+         },
+         {
+            "nombre":"Tipo de documento",
+            "value":"DNI"
+         },
+         {
+            "nombre":"N° de documento",
+            "value":361722311
+         },
+         {
+            "nombre":"CUIT\/CUIL",
+            "value":20361722311
+         },
+         {
+            "nombre":"Apellido y Nombres",
+            "value":"Juan Manuel Duran"
+         },
+         {
+            "nombre":"Fecha de Nacimiento",
+            "value":"11-07-1991"
+         },
+         {
+            "nombre":"Estado Civíl",
+            "value":"Soltero\/a"
+         }
+      ],
+      "Información Laboral":[
+         {
+            "nombre":"Ingreso a GCBA",
+            "value":"2016-03-01T00:00:00-03:00"
+         },
+         {
+            "nombre":"Jurisdiccion",
+            "value":"F\/N SINDICATURA GENERAL DE LA CDAD.DE BS.AS."
+         },
+         {
+            "nombre":"Secretaría",
+            "value":"SUBSECRETARIA ADMINISTRACION DEL SISTEMA DE SALUD"
+         },
+         {
+            "nombre":"Dirección General",
+            "value":"DIRECCION GENERAL CGPC"
+         },
+         {
+            "nombre":"Cargo",
+            "value":"MINISTRO"
+         },
+         {
+            "nombre":"Retiro voluntario",
+            "value":"No"
+         },
+         {
+            "nombre":"Retengo Partida",
+            "value":"Si"
+         },
+         {
+            "nombre":"Organismo de Origen",
+            "value":"organismo origen test"
+         },
+         {
+            "nombre":"Relación Laboral",
+            "value":"relacion laboral test"
+         },
+         {
+            "nombre":"Especif. Rel. Laboral",
+            "value":"especificacion"
+         },
+         {
+            "nombre":"Monto Anual Neto $",
+            "value":5000000
+         }
+      ],
+      "Información Académica":[
+         {
+            "nombre":"Estudios Cursados",
+            "value":"ewfdfg"
+         }
+      ]
+   },
+   "Datos Laborales":{
+      "Antecedentes Laborales":[
+         [
+            {
+               "nombre":"Empresa, organismo",
+               "value":"Hotel sa"
+            },
+            {
+               "nombre":"Entidad",
+               "value":"privada"
+            },
+            {
+               "nombre":"Actividad de la Empresa",
+               "value":"hoteleria"
+            },
+            {
+               "nombre":"Cargo o función",
+               "value":"administrativo"
+            },
+            {
+               "nombre":"Desde",
+               "value":"2009-06-17T00:00:00-03:00"
+            },
+            {
+               "nombre":"Hasta",
+               "value":"2010-07-01T00:00:00-03:00"
+            }
+         ],
+         [
+            {
+               "nombre":"Empresa, organismo",
+               "value":"Empresa test"
+            },
+            {
+               "nombre":"Entidad",
+               "value":"entidad test"
+            },
+            {
+               "nombre":"Actividad de la Empresa",
+               "value":"actividad de la empresa test"
+            },
+            {
+               "nombre":"Cargo o función",
+               "value":"cargo test"
+            },
+            {
+               "nombre":"Desde",
+               "value":"2009-10-21T00:00:00-03:00"
+            },
+            {
+               "nombre":"Hasta",
+               "value":"2016-10-04T00:00:00-03:00"
+            }
+         ],
+         [
+            {
+               "nombre":"Empresa, organismo",
+               "value":"empresa sa"
+            },
+            {
+               "nombre":"Entidad",
+               "value":"entidad test"
+            },
+            {
+               "nombre":"Actividad de la Empresa",
+               "value":"actividad test"
+            },
+            {
+               "nombre":"Cargo o función",
+               "value":"cargo test"
+            },
+            {
+               "nombre":"Desde",
+               "value":"2009-07-23T00:00:00-03:00"
+            },
+            {
+               "nombre":"Hasta",
+               "value":"2014-07-25T00:00:00-03:00"
+            }
+         ]
+      ],
+      "Actividades Actuales":[
+         [
+            {
+               "nombre":"Empresa, organismo",
+               "value":"gobierno de la ciudad"
+            },
+            {
+               "nombre":"Entidad",
+               "value":"publica"
+            },
+            {
+               "nombre":"Actividad de la Empresa",
+               "value":"administracion"
+            },
+            {
+               "nombre":"Funcion o Cargo",
+               "value":"administrativo"
+            },
+            {
+               "nombre":"Desde",
+               "value":"2014-07-23T00:00:00-03:00"
+            },
+            {
+               "nombre":"Licencia o suspensión",
+               "value":"No"
+            },
+            {
+               "nombre":"Suspención de actividad",
+               "value":"0001-12-02T01:16:00-03:00"
+            },
+            {
+               "nombre":"Horas semanales",
+               "value":"40 Hs."
+            }
+         ]
+      ]
+   },
+   "Datos Familiares":{
+      "Familia":[
+         [
+            {
+               "nombre":"Vínculo",
+               "value":"Hijo\/a"
+            },
+            {
+               "nombre":"Tipo de Documento",
+               "value":"DNI"
+            }
+         ],
+         [
+            {
+               "nombre":"Vínculo",
+               "value":"Hijo\/a"
+            },
+            {
+               "nombre":"Tipo de Documento",
+               "value":"DNI"
+            }
+         ],
+         [
+            {
+               "nombre":"Vínculo",
+               "value":"Hijo\/a"
+            },
+            {
+               "nombre":"Tipo de Documento",
+               "value":"DNI"
+            }
+         ]
+      ]
+   },
+   "Bienes":{
+      "Bienes Muebles":[
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Automotor"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"Volkswagen up"
+            },
+            {
+               "nombre":"Año fabricación ",
+               "value":2010
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2010
+            },
+            {
+               "nombre":"Vínculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":250000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":250000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Automotor"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"volkswagen gol"
+            },
+            {
+               "nombre":"Año fabricación ",
+               "value":2010
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2009
+            },
+            {
+               "nombre":"Vínculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":250000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":250000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Familiar"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Automotor"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"Chevrolet cruze"
+            },
+            {
+               "nombre":"Año fabricación ",
+               "value":2013
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2013
+            },
+            {
+               "nombre":"Vínculo",
+               "value":"Conviviente"
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":300000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":300000
+            }
+         ]
+      ],
+      "Bienes Muebles No Registrables":[
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Otro"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"anillo"
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2014
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Herencia"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":200000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":200000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Otro"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"reloj rolex"
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2015
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Herencia"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":300000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":300000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"No Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"Conviviente"
+            },
+            {
+               "nombre":"Tipo Bien",
+               "value":"Otro"
+            },
+            {
+               "nombre":"Marca\/descripción ",
+               "value":"cuadro "
+            },
+            {
+               "nombre":"Año ingreso",
+               "value":2010
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Herencia"
+            },
+            {
+               "nombre":"Porcentaje de titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Valor Fiscal $ ",
+               "value":200000
+            },
+            {
+               "nombre":"Valor Adquirido $",
+               "value":200000
+            }
+         ]
+      ],
+      "Bienes Inmuebles":[
+         [
+            {
+               "nombre":"Clasificación inmuebles",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo Bien ",
+               "value":"Casa"
+            },
+            {
+               "nombre":"Barrio\/Zona",
+               "value":"palermo"
+            },
+            {
+               "nombre":"Localidad",
+               "value":"caba"
+            },
+            {
+               "nombre":"Provincia",
+               "value":"Buenos Aires"
+            },
+            {
+               "nombre":"Pais",
+               "value":"Argentina"
+            },
+            {
+               "nombre":"Porcentaje de Titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Año ingreso ",
+               "value":2000
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Superficie ",
+               "value":"200"
+            },
+            {
+               "nombre":"unidad",
+               "value":"M2"
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificación inmuebles",
+               "value":"Familiar"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"Conviviente"
+            },
+            {
+               "nombre":"Tipo Bien ",
+               "value":"Casa"
+            },
+            {
+               "nombre":"Barrio\/Zona",
+               "value":"palermo"
+            },
+            {
+               "nombre":"Localidad",
+               "value":"caba"
+            },
+            {
+               "nombre":"Provincia",
+               "value":"Buenos Aires"
+            },
+            {
+               "nombre":"Pais",
+               "value":"Argentina"
+            },
+            {
+               "nombre":"Porcentaje de Titularidad",
+               "value":"100"
+            },
+            {
+               "nombre":"Año ingreso ",
+               "value":2010
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Superficie ",
+               "value":"200"
+            },
+            {
+               "nombre":"unidad",
+               "value":"M2"
+            }
+         ]
+      ],
+      "Títulos":[
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo de título",
+               "value":"Titulos públicos"
+            },
+            {
+               "nombre":"Descripción ",
+               "value":"Descripcion test"
+            },
+            {
+               "nombre":"Ramo",
+               "value":"objeto de test"
+            },
+            {
+               "nombre":"Cantidad de Acciones",
+               "value":0
+            },
+            {
+               "nombre":"Fecha adquiere",
+               "value":"2009-02-04T00:00:00-02:00"
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Valor Actual $",
+               "value":3000000
+            },
+            {
+               "nombre":"Valor Adquirido $ ",
+               "value":3000000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Familiar"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"Conviviente"
+            },
+            {
+               "nombre":"Tipo de título",
+               "value":"Bonos"
+            },
+            {
+               "nombre":"Descripción ",
+               "value":"bonard"
+            },
+            {
+               "nombre":"Ramo",
+               "value":"objeto test "
+            },
+            {
+               "nombre":"Cantidad de Acciones",
+               "value":0
+            },
+            {
+               "nombre":"Fecha adquiere",
+               "value":"2016-10-13T00:00:00-03:00"
+            },
+            {
+               "nombre":"Origen fondos ",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Valor Actual $",
+               "value":300000
+            },
+            {
+               "nombre":"Valor Adquirido $ ",
+               "value":300000
+            }
+         ]
+      ],
+      "Sociedades":[
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Fecha adquiere",
+               "value":"2016-10-07T00:00:00-03:00"
+            },
+            {
+               "nombre":"Origen fondos",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Valor actual $ ",
+               "value":5000000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificacion de registro",
+               "value":"Familiar"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"Conviviente"
+            },
+            {
+               "nombre":"Fecha adquiere",
+               "value":"2016-10-05T00:00:00-03:00"
+            },
+            {
+               "nombre":"Origen fondos",
+               "value":"Ingresos propios"
+            },
+            {
+               "nombre":"Valor actual $ ",
+               "value":300000
+            }
+         ]
+      ],
+      "Depósitos":[
+
+      ],
+      "Otros Trabajos":[
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Cargo o función",
+               "value":"administrativo"
+            },
+            {
+               "nombre":"Relación Laboral ",
+               "value":"autonomo"
+            },
+            {
+               "nombre":"Empleador \/ Entidad ",
+               "value":"dapsa SA"
+            },
+            {
+               "nombre":"Actividad de la Empresa, etc\/ ámbito ",
+               "value":"administracion de bienes"
+            },
+            {
+               "nombre":"Monto Anual Neto $ ",
+               "value":450000
+            },
+            {
+               "nombre":"Fecha desde",
+               "value":"2016-03-11T00:00:00-03:00"
+            },
+            {
+               "nombre":"Actividad",
+               "value":"Si"
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vinculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Cargo o función",
+               "value":"agencia viajes"
+            },
+            {
+               "nombre":"Relación Laboral ",
+               "value":"atuonoma"
+            },
+            {
+               "nombre":"Empleador \/ Entidad ",
+               "value":"city tours ba"
+            },
+            {
+               "nombre":"Actividad de la Empresa, etc\/ ámbito ",
+               "value":"turismo"
+            },
+            {
+               "nombre":"Monto Anual Neto $ ",
+               "value":500000
+            },
+            {
+               "nombre":"Fecha desde",
+               "value":"2012-08-23T00:00:00-03:00"
+            },
+            {
+               "nombre":"Actividad",
+               "value":"Si"
+            }
+         ]
+      ],
+      "Actividades":[
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vínculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo de ingreso",
+               "value":"Alquileres"
+            },
+            {
+               "nombre":"Derecho originante",
+               "value":"derecho de bien originante"
+            },
+            {
+               "nombre":"Monto total",
+               "value":100000
+            }
+         ],
+         [
+            {
+               "nombre":"Clasificación de registro",
+               "value":"Propio"
+            },
+            {
+               "nombre":"Vínculo",
+               "value":"N\/A"
+            },
+            {
+               "nombre":"Tipo de ingreso",
+               "value":"Alquileres"
+            },
+            {
+               "nombre":"Derecho originante",
+               "value":"origen test"
+            },
+            {
+               "nombre":"Monto total",
+               "value":300000000
+            }
+         ]
+      ],
+      "Venta de inmuebles":[
+         [
+
+         ]
+      ],
+      "Deudas":[
+         [
+
+         ]
+      ],
+      "Acreencias":[
+         [
+
+         ]
+      ]
+   }
 }

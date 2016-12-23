@@ -56,6 +56,7 @@ $params = array("arg0" => $uuid);
 $rslt = $service->buscarTransaccionPorUUID($params);
 
 $data = json_encode((array)($rslt->return), JSON_UNESCAPED_UNICODE);
+echo $data."\r\n";
 $data = json_decode($data);
 $declaracionJurada["Fecha Creación"] = $data->fechaCreacion;
 $data = $data->valorFormComps;
@@ -142,6 +143,7 @@ while ($i < count($data) && $data[$i]->orden <= 150)
     }
     else if($j == 45)
     {
+        $subsubproperty = 0;
         $contador =  $data[$i]->valorLong+1;
         for ($k = 0; $k < $contador; $k++)
         {
