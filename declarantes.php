@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "hernanpc";
-$password = "6268";
-$dbname = "ddjj";
+include 'configuracion.php';
 $conn = new mysqli($servername, $username, $password, $dbname);
 $ministerio = isset($_GET["ministerio"]) ? $_GET["ministerio"] : "";
 $cargo = isset($_GET["cargo"]) ? $_GET["cargo"] : "";

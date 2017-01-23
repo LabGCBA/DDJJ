@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "hernanpc";
-$password = "6268";
-$dbname = "ddjj";
+include 'configuracion.php';
 $conn = new mysqli($servername, $username, $password, $dbname);
 $cuit = isset($_GET["cuit"]) ? $_GET["cuit"] : "";
 if ($cuit == "")

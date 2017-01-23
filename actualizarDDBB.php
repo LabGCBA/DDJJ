@@ -16,10 +16,7 @@ class Credentials{
         $this->password = $password;
     }
 }
-$servername = "localhost";
-$username = "hernanpc";
-$password = "6268";
-$dbname = "ddjj";
+include 'configuracion.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
