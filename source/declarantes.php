@@ -4,6 +4,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 $ministerio = isset($_GET["ministerio"]) ? $_GET["ministerio"] : "";
 $cargo = isset($_GET["cargo"]) ? $_GET["cargo"] : "";
 $busqueda = isset($_GET["busqueda"]) ? $_GET["busqueda"] : "";
+foreach ($_GET as $param => $valor) {
+    if ($param != "ministerio" && $param != "cargo" && $param != "busqueda")
+       die("Acceso Incorrecto");
+}
 if ($busqueda == "")
 {
     if ($ministerio == "")
@@ -56,7 +60,7 @@ else
 }
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Acceso Incorrecto");
 } 
 $result = $conn->query($sql);
 $resultado = array();

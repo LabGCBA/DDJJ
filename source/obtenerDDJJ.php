@@ -41,10 +41,29 @@ class Propiedad{
         $this->value = $value;
     }
 }
-
-$uuid = isset($_GET["uuid"]) ? $_GET["uuid"] : "";
-$url = "http://euf.hml.gcba.gob.ar";
+foreach ($_GET as $param => $valor) {
+    if ($param != "uuid")
+        die("Acceso Incorrecto");
+}
+$uuid = isset($_GET["uuid"]) ? $_GET["uuid"] : die("UUID no especificado");
+$url = "http://euf.gcba.gob.ar";
 $location = "/dynform-web/transaccionService";
+
+include 'configuracion.php';
+$conn = new mysqli($servername, $username, $password, $dbname);
+$sql = "SELECT * FROM declaraciones";
+$result = $conn->query($sql);
+$declaraciones = array();
+$cont = 0;
+while($row = $result->fetch_assoc())
+{
+    if ($row["uuid"] == $uuid) {
+        $cont++;
+    }
+}
+if ($cont == 0) {
+    die("Acceso Incorrecto");
+}
 
 
 $service = new SoapClient($url.$location."?wsdl");

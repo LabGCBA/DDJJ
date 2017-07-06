@@ -5,6 +5,10 @@ if (isset($_GET["cuit"]))
     $cuit1 = $_GET["cuit"];
 else
     $cuit1 = "";
+foreach ($_GET as $param => $valor) {
+    if ($param != "cuit")
+        die("Acceso Incorrecto");
+}
 class Credentials{
     public $username ='';
     public $password= '';
@@ -21,8 +25,24 @@ include 'configuracion.php';
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Acceso Incorrecto");
 } 
+if ($cuit1 != "") {
+     $sql = "SELECT * FROM declarantes";
+    $result = $conn->query($sql);
+    $cont = 0;
+    while($row = $result->fetch_assoc())
+    {
+        if ($row["cuit"] == $cuit1) {
+            $cont++;
+        }
+    }
+    if ($cont == 0) {
+        die("Acceso Incorrecto");
+    }
+}
+
+
 $sql = "CREATE TABLE IF NOT EXISTS declarantes (
 cuit VARCHAR(15) PRIMARY KEY NOT NULL, 
 nombre VARCHAR(100) NOT NULL,
@@ -63,7 +83,7 @@ if(!$conn->query($sql4))
 $url = "http://10.79.0.72";
 $service = new SoapClient(null, array("location" => $url."/ddjj/services/historico/list.php", "uri" => $url));
 $service->__setSoapHeaders(new SoapHeader($url,'authenticate', new Credentials('20279391137', 'testmarino')));
-$rslt = $service->getList($cuit1,0,200);
+$rslt = $service->getList($cuit1,0,1000);
 $data = json_decode($rslt)->lista;
 
 
@@ -84,7 +104,7 @@ foreach($data as &$declaracion)
     {
         $sql = "INSERT INTO declarantes (cuit,nombre,ministerio,cargo,ultima,uuid_last) VALUES ('{$cuit}','{$nombre}','{$ministerio}','{$cargo}', '{$fecha}', '{$uuid}');";
         if(!$conn->query($sql))
-        echo "Error cargando valor a tabla: " .$conn->error ."\n";
+        die("Acceso Incorrecto");
     }
     else 
     {
@@ -93,18 +113,18 @@ foreach($data as &$declaracion)
         {
             $sql = "UPDATE declarantes SET nombre='{$nombre}',ministerio='{$ministerio}',cargo='{$cargo}',ultima='{$fecha}',uuid_last='{$uuid}' WHERE cuit='{$cuit}';";
             if(!$conn->query($sql))
-                echo "Error cargando valor a tabla: " .$conn->error ."\n";
+               die("Acceso Incorrecto");
         }
     }
     $sql = "INSERT IGNORE INTO ministerios (ministerio) VALUES ('{$ministerio}');";
     if(!$conn->query($sql))
-        echo "Error cargando valor a tabla: " .$conn->error ."\n";
+        die("Acceso Incorrecto");
     $sql ="INSERT IGNORE INTO cargos (cargo) VALUES ('{$cargo}');";
     if(!$conn->query($sql))
-        echo "Error cargando valor a tabla: " .$conn->error ."\n";
+       die("Acceso Incorrecto");
     $sql = "INSERT IGNORE INTO declaraciones (uuid,cuit,nombre,ministerio,cargo,fecha,tipo,revision) VALUES ({$uuid},'{$cuit}','{$nombre}','{$ministerio}','{$cargo}','{$fecha}','{$tipo}',{$revision});";
     if(!$conn->query($sql))
-        echo "Error cargando valor a tabla: " .$conn->error ."\n";
+        die("Acceso Incorrecto");
 }
 if ($cuit1 == "")
     echo "Actualizadas todas las tablas";
